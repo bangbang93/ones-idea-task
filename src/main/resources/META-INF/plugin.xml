@@ -1,0 +1,12 @@
+<idea-plugin>
+    <id>com.bangbang93.onesideatask</id>
+    <name>ONES Task</name>
+    <vendor>bangbang93</vendor>
+    <description>Integrates ONES issue tracking into IntelliJ IDEA as a task repository.</description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.tasks</depends>
+    <idea-version since-build="262"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <tasks.repositoryType implementation="com.bangbang93.onesideatask.OnesTaskRepositoryType"/>
+    </extensions>
+</idea-plugin>
